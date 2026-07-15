@@ -8,7 +8,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" href="./images/professional-portfolio.png" type="image/png" />
+    <link
+      rel="icon"
+      href="./images/professional-portfolio.png"
+      type="image/png"
+    />
   </head>
   <body class="bg-black text-white font-sans overflow-x-hidden">
     <!-- Header -->
@@ -17,6 +21,7 @@
     <header class="pt-3 px-4 flex flex-wrap justify-between items-center">
       <h1 class="text-2xl sm:text-3xl font-bold">DC</h1>
       <nav class="flex flex-wrap justify-center" id="links">
+        <a href="#dsa" class="mx-2 sm:mx-3 ani">DSA</a>
         <a href="#skills" class="mx-2 sm:mx-3 ani">Skills</a>
         <a href="#projects" class="mx-2 sm:mx-3 ani">Projects</a>
         <a href="#contact" class="mx-2 sm:mx-3 ani">Contact</a>
@@ -67,7 +72,7 @@
             Full Stack Developer
           </p>
           <p
-            class="mt-2 sm:mt-3 text-gray-400 max-w-lg opacity-0 translate-x-[-100%] text-sm sm:text-base md:text-lg mx-auto md:mx-0"
+            class="mt-4 sm:mt-6 text-gray-400 max-w-lg opacity-0 translate-x-[-100%] text-sm sm:text-base md:text-lg mx-auto md:mx-0"
             id="about"
           >
             I am a full-stack developer specializing in creating scalable web
@@ -96,6 +101,83 @@
       </div>
     </section>
 
+    <!-- Data Structures & Algorithms Section -->
+    <section id="dsa" class="pt-8 pb-4 md:pt-12 md:pb-8 opacity-0">
+      <div class="container mx-auto px-4 sm:px-6 text-center">
+        <h3 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-3">
+          Data Structures & Algorithms
+        </h3>
+        <p class="text-gray-400 mb-8 text-sm sm:text-base md:text-lg">
+          Total Problems Solved:
+          <span
+            id="total-val"
+            class="text-white font-bold text-xl md:text-2xl ml-1"
+            >Loading...</span
+          >
+        </p>
+
+        <div class="flex flex-wrap justify-center gap-4 sm:gap-6">
+          <!-- LeetCode -->
+          <a
+            href="https://leetcode.com/u/Dushyant_Chauhan/"
+            target="_blank"
+            class="bg-gray-900 px-5 py-3 sm:px-6 sm:py-4 rounded-xl border border-gray-700 hover:border-orange-500 transition-all flex items-center gap-3"
+          >
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png"
+              class="w-6 h-6 bg-white rounded-sm p-0.5"
+            />
+            <span
+              class="text-sm sm:text-base font-semibold text-gray-300 tracking-wider"
+              >LeetCode</span
+            >
+          </a>
+          <!-- Codeforces -->
+          <a
+            href="https://codeforces.com/profile/Dushyant_Chauhan"
+            target="_blank"
+            class="bg-gray-900 px-5 py-3 sm:px-6 sm:py-4 rounded-xl border border-gray-700 hover:border-blue-500 transition-all flex items-center gap-3"
+          >
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+              class="w-6 h-6 bg-white rounded-full p-0.5"
+            />
+            <span
+              class="text-sm sm:text-base font-semibold text-gray-300 tracking-wider"
+              >Codeforces</span
+            >
+          </a>
+          <!-- GFG -->
+          <a
+            href="https://www.geeksforgeeks.org/user/dushyant_chauhan/"
+            target="_blank"
+            class="bg-gray-900 px-5 py-3 sm:px-6 sm:py-4 rounded-xl border border-gray-700 hover:border-green-500 transition-all flex items-center gap-3"
+          >
+            <img
+              src="https://media.geeksforgeeks.org/gfg-gg-logo.svg"
+              class="w-6 h-6"
+            />
+            <span
+              class="text-sm sm:text-base font-semibold text-gray-300 tracking-wider"
+              >GFG</span
+            >
+          </a>
+          <!-- Codolio -->
+          <a
+            href="https://codolio.com/profile/Dushyant_Chauhan"
+            target="_blank"
+            class="bg-gray-900 px-5 py-3 sm:px-6 sm:py-4 rounded-xl border border-gray-700 hover:border-purple-500 transition-all flex items-center gap-3"
+          >
+            <img src="https://codolio.com/favicon.ico" class="w-6 h-6" />
+            <span
+              class="text-sm sm:text-base font-semibold text-gray-300 tracking-wider"
+              >Codolio</span
+            >
+          </a>
+        </div>
+      </div>
+    </section>
+
     <!-- Technologies Section with Wave Animation -->
     <section class="py-12 pb-14 md:pb-20 overflow-hidden" id="skills">
       <div class="container mx-auto px-4 sm:px-6 text-center">
@@ -106,32 +188,32 @@
         >
           <img
             src="./images/c.png"
-            alt="Node.js"
+            alt="C"
             class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 wave"
           />
           <img
             src="./images/cpp.png"
-            alt="MongoDB"
+            alt="C++"
             class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 wave"
           />
           <img
             src="./images/html.png"
-            alt="JavaScript"
+            alt="HTML"
             class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 wave"
           />
           <img
             src="./images/css.png"
-            alt="JavaScript"
+            alt="CSS"
             class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 wave"
           />
           <img
             src="./images/javascript.png"
-            alt="React"
+            alt="JavaScript"
             class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 wave"
           />
           <img
             src="./images/tailwind.png"
-            alt="JavaScript"
+            alt="Tailwind"
             class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 wave"
           />
           <img
@@ -141,12 +223,12 @@
           />
           <img
             src="./images/node.png"
-            alt="React"
+            alt="Node"
             class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 wave"
           />
           <img
             src="./images/express.png"
-            alt="React"
+            alt="Express"
             class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 wave"
           />
         </div>
@@ -163,7 +245,7 @@
         <div
           class="flex flex-col gap-10 sm:gap-14 md:gap-16 mt-6 sm:mt-8 md:mt-10"
         >
-          <!-- Project 1: Online Study Website -->
+          <!-- Project 1: Exam Pro -->
           <a
             href="https://luxury-kitsune-1ddf90.netlify.app/"
             target="_blank"
@@ -193,7 +275,8 @@
               </p>
             </div>
           </a>
-          <!-- Project 2: Online Study Website -->
+
+          <!-- Project 2: Expense Tracker -->
           <a
             href="https://spontaneous-cheesecake-8cb690.netlify.app/"
             target="_blank"
@@ -224,9 +307,8 @@
             </div>
           </a>
 
-          
-          <!-- Project 3: Online Study Website -->
-           <a
+          <!-- Project 3: Ground Booking Management -->
+          <a
             href="https://groundbookingmanagementsystem-2-z3sy.onrender.com"
             target="_blank"
             class="opacity-0 project flex flex-col md:flex-row items-center gap-4 sm:gap-6 px-4"
@@ -245,15 +327,18 @@
               <p
                 class="mt-1 sm:mt-2 text-xs sm:text-sm md:text-base text-gray-400"
               >
-                Developed a full-stack Ground Booking Management System using the MERN Stack, featuring role-based access for Admins and Users. Admins can add, update, and manage sports grounds, while users can explore available grounds, book slots, and track their bookings. Implemented dynamic CRUD operations, RESTful APIs, MongoDB integration, and a responsive React interface to provide a fast and intuitive booking experience.
+                Developed a full-stack Ground Booking Management System using
+                the MERN Stack, featuring role-based access for Admins and
+                Users. Admins can add, update, and manage sports grounds, while
+                users can explore available grounds, book slots, and track their
+                bookings. Implemented dynamic CRUD operations, RESTful APIs,
+                MongoDB integration, and a responsive React interface to provide
+                a fast and intuitive booking experience.
               </p>
             </div>
           </a>
 
-
-
-          
-          <!-- Project 3: Online Study Website -->
+          <!-- Project 4: Online Study Website -->
           <a
             href="https://10-x-study-dc.vercel.app/"
             target="_blank"
@@ -281,7 +366,7 @@
             </div>
           </a>
 
-          <!-- Project 4: Travel Expense Website -->
+          <!-- Project 5: Travel Expense Website -->
           <a
             href="https://traveling-expense-dc.vercel.app/"
             target="_blank"
@@ -309,7 +394,7 @@
             </div>
           </a>
 
-          <!-- Project 5: Razorpay Clone -->
+          <!-- Project 6: Razorpay Clone -->
           <a
             href="https://razor-pay-dc-clone-ggkg.vercel.app/"
             target="_blank"
@@ -337,7 +422,7 @@
             </div>
           </a>
 
-          <!-- Project 6: Portfolio Website -->
+          <!-- Project 7: Portfolio Website -->
           <a
             href="https://portfolio-in-html-css.vercel.app/"
             target="_blank"
@@ -364,7 +449,7 @@
             </div>
           </a>
 
-          <!-- Project 7: Weather App Website -->
+          <!-- Project 8: Weather App Website -->
           <a
             href="https://weather-app-dc-api.vercel.app/"
             target="_blank"
@@ -390,7 +475,7 @@
             </div>
           </a>
 
-          <!-- Project 8: My Gallery -->
+          <!-- Project 9: My Gallery -->
           <a
             href="https://gallery-fawn-sigma.vercel.app/"
             target="_blank"
@@ -418,7 +503,7 @@
             </div>
           </a>
 
-          <!-- Project 9: Parallax Effect -->
+          <!-- Project 10: Parallax Effect -->
           <a
             href="https://parallex-effect-dc.vercel.app/"
             target="_blank"
@@ -446,7 +531,7 @@
             </div>
           </a>
 
-          <!-- Project 10: Password Generator -->
+          <!-- Project 11: Password Generator -->
           <a
             href="https://password-generator-dc.vercel.app/"
             target="_blank"
@@ -474,7 +559,7 @@
             </div>
           </a>
 
-          <!-- Project 10: 3D Animated Website -->
+          <!-- Project 12: 3D Animated Website -->
           <a
             href="https://animationdc.vercel.app/"
             target="_blank"
@@ -535,9 +620,29 @@
         link.click();
       }
 
+      // Fetch and display single DSA stats for the new section
+      async function updateDSAStats() {
+        try {
+          const response = await fetch(
+            "https://dsa-stats.onrender.com/api/total",
+          );
+          const data = await response.json();
+          if (data && data.totalSolved) {
+            document.getElementById("total-val").innerText = data.totalSolved;
+          } else {
+            document.getElementById("total-val").innerText = "Data Unavailable";
+          }
+        } catch (error) {
+          console.error("Error fetching DSA stats:", error);
+          document.getElementById("total-val").innerText = "Data Unavailable";
+        }
+      }
+
+      updateDSAStats();
+
       gsap.registerPlugin(ScrollTrigger);
 
-      // Sequential Hero Animation with Left Slide Effect
+      // Sequential Hero Animation
       gsap.to("#name", { opacity: 1, x: 0, duration: 0.5 });
       gsap.to("#role", { opacity: 1, x: 0, duration: 0.5, delay: 0.5 });
       gsap.to("#about", { opacity: 1, x: 0, duration: 0.5, delay: 1 });
@@ -546,6 +651,16 @@
         x: 0,
         duration: 0.5,
         delay: 1.5,
+      });
+
+      // DSA Section Fade in
+      gsap.to("#dsa", {
+        opacity: 1,
+        duration: 1,
+        scrollTrigger: {
+          trigger: "#dsa",
+          start: "top 85%",
+        },
       });
 
       // Technologies Wave Animation
